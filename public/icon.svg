@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- App Background -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)" />
+  
+  <!-- Calendar Base Card -->
+  <rect x="96" y="100" width="320" height="290" rx="36" fill="#ffffff" filter="url(#shadow)"/>
+  
+  <!-- Calendar Header Top -->
+  <path d="M96 136 C96 116 112 100 132 100 L380 100 C400 100 416 116 416 136 L416 170 L96 170 Z" fill="#2563eb" />
+  
+  <!-- Calendar Binders -->
+  <rect x="160" y="76" width="24" height="46" rx="12" fill="#93c5fd"/>
+  <rect x="328" y="76" width="24" height="46" rx="12" fill="#93c5fd"/>
+
+  <!-- Calendar Day Checkmark / Event Accent -->
+  <circle cx="170" cy="235" r="18" fill="#e0e7ff"/>
+  <circle cx="256" cy="235" r="18" fill="#d1fae5"/>
+  <circle cx="342" cy="235" r="18" fill="#fef3c7"/>
+  
+  <!-- Finance Trend / Growth Badge Floating -->
+  <g transform="translate(190, 240)" filter="url(#shadow)">
+    <rect x="0" y="0" width="220" height="180" rx="28" fill="url(#emeraldGrad)"/>
+    <!-- Currency / Graph Line -->
+    <path d="M30 130 L75 95 L115 115 L180 50" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="180,50 152,50 180,78" fill="#ffffff"/>
+    <!-- Euro/Dollar symbol -->
+    <text x="35" y="65" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="900" fill="#ffffff" opacity="0.9">€/$</text>
+  </g>
+</svg>

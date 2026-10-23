@@ -1,0 +1,8 @@
+{
+  "name": "AuraDaily - Financial & Event Planning Companion",
+  "description": "Mobile-ready daily companion for tracking recurring & one-time finances, rich spending trends, and smart group event planning with attendee availability scheduling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
